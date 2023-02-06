@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/k-raya/static/css/main.716f29e4.css",
+    "main.js": "/k-raya/static/js/main.5d8dd2fc.js",
+    "static/js/787.ebf3c397.chunk.js": "/k-raya/static/js/787.ebf3c397.chunk.js",
+    "static/media/tall.png": "/k-raya/static/media/tall.e9cfb2343be562136627.png",
+    "index.html": "/k-raya/index.html",
+    "main.716f29e4.css.map": "/k-raya/static/css/main.716f29e4.css.map",
+    "main.5d8dd2fc.js.map": "/k-raya/static/js/main.5d8dd2fc.js.map",
+    "787.ebf3c397.chunk.js.map": "/k-raya/static/js/787.ebf3c397.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.716f29e4.css",
+    "static/js/main.5d8dd2fc.js"
+  ]
+}
