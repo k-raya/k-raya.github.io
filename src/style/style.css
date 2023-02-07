@@ -1,45 +1,3 @@
-body {
-   font-family: "Varela Round", sans-serif;
-   background-color: rgb(77, 12, 255);
-   color: rgb(255, 255, 255);
-   font-size: 20px;
-}
-
-.navbar-container {
-   display: flex;
-   color: rgb(255, 255, 255);
-   background-color: rgb(77, 12, 255);
-   justify-content: space-around;
-   align-items: center;
-   height: 8vh;
-}
-
-.nav-list-container {
-   display: flex;
-   list-style-type: none;
-   gap: 20px;
-}
-
-.logo {
-   text-decoration: none;
-   color: rgb(255, 255, 255);
-   font-weight: bolder;
-}
-
-
-.home-link,
-.projects-link,
-.contact-link {
-   text-decoration: none;
-   color: rgb(255, 255, 255);
-   font-weight: bold;
-}
-
-.selected {
-   color: rgb(255, 183, 0);
-   text-decoration: dashed underline;
-}
-
 .intro-container {
    display: flex;
    flex-direction: column;
@@ -69,18 +27,23 @@ body {
 .social-icons {
    display: flex;
    gap: 10px;
-
 }
 
-#git-icon:hover,
-#linkedin-icon:hover,
-#twitter-icon:hover {
-   text-shadow: 0 0 3px #FF0000;
-   transition: text-shadow 0.5s;
+#git-icon,
+#linkedin-icon,
+#twitter-icon {
+   color: rgb(212, 0, 53);
+}
+
+#dark #git-icon,
+#dark #linkedin-icon,
+#dark #twitter-icon {
+   color: rgb(255, 255, 255);
 }
 
 .contact-container {
    display: flex;
+   padding: 5%;
    text-align: center;
    flex-direction: column;
    align-items: center;
@@ -96,9 +59,7 @@ body {
 .form-container {
    border-radius: 10px;
    padding: 15px 30px;
-
 }
-
 
 input[type=text],
 input[type=email] {
@@ -123,13 +84,33 @@ textarea:focus,
 input[type=text]:focus,
 input[type=email]:focus {
    outline: none !important;
+   border: 2px solid rgb(77, 12, 255);
+   transition: border 0.3s;
+}
+
+#dark textarea:focus,
+#dark input[type=text]:focus,
+#dark input[type=email]:focus {
+   outline: none !important;
    border: 2px solid rgb(255, 183, 0);
    transition: border 0.3s;
 }
 
 #contact-button {
+   background-color: rgb(77, 12, 255);
+   color: rgb(255, 255, 255);
+   padding: 5px;
+   margin-left: 120px;
+   margin-right: 120px;
+   border-radius: 10px;
+   border-style: none;
+   font-size: 18px;
+   cursor: pointer;
+}
+
+#dark #contact-button {
    background-color: rgb(255, 183, 0);
-   color: rgb(87, 55, 205);
+   color: rgb(255, 255, 255);
    padding: 5px;
    margin-left: 120px;
    margin-right: 120px;
@@ -140,8 +121,14 @@ input[type=email]:focus {
 }
 
 #contact-button:hover {
+   background-color: rgb(151, 114, 255);
+   color: rgb(255, 255, 255);
+   transition: background-color 0.3s, color 0.3s;
+}
+
+#dark #contact-button:hover {
    background-color: rgb(255, 218, 124);
-   color: rgb(106, 71, 231);
+   color: rgb(255, 255, 255);
    transition: background-color 0.3s, color 0.3s;
 }
 

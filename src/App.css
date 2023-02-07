@@ -1,38 +1,73 @@
 .App {
   text-align: center;
+  font-family: "Varela Round", sans-serif;
+  background-color: rgb(77, 12, 255);
+  font-size: 20px;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#light {
+  background: rgb(255, 187, 27);
+  color: rgb(63, 63, 63);
+  transition: background 0.5s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#dark {
+  background: rgb(77, 12, 255);
+  color: rgb(255, 255, 255);
+  transition: background 0.5s ease;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+}
+
+.home-link,
+.projects-link,
+.contact-link {
+  text-decoration: none;
+  color: rgb(63, 63, 63);
+  font-weight: bold;
+}
+
+#dark .home-link,
+#dark .projects-link,
+#dark .contact-link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.selected {
+  color: rgb(212, 0, 53);
+  text-decoration: dashed underline;
+}
+
+#dark .selected {
+  color: rgb(255, 183, 0);
+  text-decoration: dashed underline;
+}
+
+.logo {
+  text-decoration: none;
+  color: rgb(63, 63, 63);
+  font-weight: bolder;
+}
+
+#dark .logo {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
 }
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

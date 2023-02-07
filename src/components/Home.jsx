@@ -4,7 +4,7 @@ import { AiFillGithub, AiFillTwitterCircle, AiFillLinkedin } from "react-icons/a
 import { Link } from 'react-router-dom';
 import Tall from './images/tall.png';
 
-export default function Home() {
+export default function Home({ toggled, onClick }) {
     return (
 
         <div className="animate__animated animate__bounceIn">
@@ -17,9 +17,9 @@ export default function Home() {
                     daydreaming.
                 </div>
                 <div className="social-icons">
-                    <Link to='https://github.com/k-raya' id='git-icon'><IconContext.Provider value={{ color: 'white', size: '50px' }}> <AiFillGithub /></IconContext.Provider></Link>
-                    <Link to='https://www.linkedin.com/in/kev-raya/' id='linkedin-icon'><IconContext.Provider value={{ color: 'white', size: '50px' }}><AiFillLinkedin /></IconContext.Provider></Link>
-                    <Link to='https://twitter.com/SmallTall_' id='twitter-icon'><IconContext.Provider value={{ color: 'white', size: '50px' }}><AiFillTwitterCircle /></IconContext.Provider></Link>
+                    <Link to='https://github.com/k-raya' id='git-icon'><IconContext.Provider value={{ size: '50px' }}> <AiFillGithub /></IconContext.Provider></Link>
+                    <Link to='https://www.linkedin.com/in/kev-raya/' id='linkedin-icon'><IconContext.Provider value={{ size: '50px' }}><AiFillLinkedin /></IconContext.Provider></Link>
+                    <Link to='https://twitter.com/SmallTall_' id='twitter-icon'><IconContext.Provider value={{ size: '50px' }}><AiFillTwitterCircle /></IconContext.Provider></Link>
                 </div>
             </div>
             <div>{/* <!--empty for now--> */}</div>
