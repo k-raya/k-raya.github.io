@@ -4,18 +4,26 @@ import "animate.css";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import { useState, createContext } from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import ContactSuccess from "./components/ContactSuccess";
+import { useState, useEffect, createContext } from "react";
+import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Toggle from "./components/toggle/Toggle";
 
 
-export const ThemeContext = createContext("light");
+export const ThemeContext = createContext(null);
 
 
 function App() {
   const [selected, setSelected] = useState("");
   const [theme, setTheme] = useState("dark");
   const [toggled, setToggled] = useState(true);
+
+
+
+
+  useEffect(() => {
+    document.body.style.backgroundColor = theme === "dark" ? "#4D0CFF" : "#FFBB1B";
+  }, [theme]);
 
   const navBarClick = (page) => {
     if (selected !== page) {
@@ -49,7 +57,8 @@ function App() {
                   </li>
                   <li className={selected === "contact" ? "selected animate__animated animate__tada" : ""} onClick={() => navBarClick("contact")}>
                     <Link to="/contact" className="contact-link"> Contact </Link>
-                  </li><Toggle toggled={toggled} onClick={toggleTheme} />
+                  </li>
+                  <Toggle toggled={toggled} onClick={toggleTheme} />
                 </ul>
               </div>
 
@@ -60,6 +69,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/contact/success" element={<ContactSuccess />} />
           </Routes>
 
         </Router >

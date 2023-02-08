@@ -1,19 +1,16 @@
 .App {
+  display: block;
   text-align: center;
   font-family: "Varela Round", sans-serif;
-  background-color: rgb(77, 12, 255);
   font-size: 20px;
-  height: 100vh;
 }
 
 #light {
-  background: rgb(255, 187, 27);
-  color: rgb(63, 63, 63);
+  color: rgb(131, 51, 51);
   transition: background 0.5s ease;
 }
 
 #dark {
-  background: rgb(77, 12, 255);
   color: rgb(255, 255, 255);
   transition: background 0.5s ease;
 }
@@ -34,7 +31,7 @@
 .projects-link,
 .contact-link {
   text-decoration: none;
-  color: rgb(63, 63, 63);
+  color: rgb(170, 62, 62);
   font-weight: bold;
 }
 
@@ -58,7 +55,7 @@
 
 .logo {
   text-decoration: none;
-  color: rgb(63, 63, 63);
+  color: rgb(170, 62, 62);
   font-weight: bolder;
 }
 

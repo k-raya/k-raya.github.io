@@ -1,6 +1,7 @@
 import React from 'react'
 
 export default function Contact() {
+
     return (
         <div className="contact-container animate__animated animate__bounceIn">
             <div id='contact-text'>
@@ -15,7 +16,7 @@ export default function Contact() {
                     <input type="text" name="name" placeholder="Name" required />
                     <input type="email" name="email" placeholder="Enter Email" required />
                     <textarea name="message" placeholder='Type your message here...' required></textarea>
-                    <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+                    <input type="hidden" name="redirect" value='https://k-raya.github.io/' />
 
                     <button type="submit" id='contact-button'>Send</button>
                 </form >

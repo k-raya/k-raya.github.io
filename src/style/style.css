@@ -13,7 +13,6 @@
    width: 300px;
    border-style: none;
    border-width: 4px;
-   background-color: rgb(87, 55, 205);
 }
 
 #greeting {
@@ -97,7 +96,6 @@ input[type=email]:focus {
 }
 
 #contact-button {
-   background-color: rgb(77, 12, 255);
    color: rgb(255, 255, 255);
    padding: 5px;
    margin-left: 120px;
