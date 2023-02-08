@@ -16,7 +16,7 @@ export default function Contact() {
                     <input type="text" name="name" placeholder="Name" required />
                     <input type="email" name="email" placeholder="Enter Email" required />
                     <textarea name="message" placeholder='Type your message here...' required></textarea>
-                    <input type="hidden" name="redirect" value='https://k-raya.github.io/' />
+                    <input type="hidden" name="redirect" value='https://k-raya.github.io/#/contact/success' />
 
                     <button type="submit" id='contact-button'>Send</button>
                 </form >
